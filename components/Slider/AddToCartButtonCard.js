@@ -1,12 +1,13 @@
 import Button from '@mui/material/Button'
 import styles from './addtocartbuttoncard.module.css'
 import { useContext } from 'react'
-import { StateContext } from '../../pages/_app'
+
 import { reducerContants } from '../../utils/reducerContants'
 import AddIcon from '@mui/icons-material/Add'
 import RemoveIcon from '@mui/icons-material/Remove'
+import { GlobalContext } from '../../StateManagement/GlobalState'
 export const AddToCartButtonCard = (props) => {
-  const { state, dispatch } = useContext(StateContext)
+  const { state, dispatch } = useContext(GlobalContext)
   let foundProduct
 
   foundProduct = state.cartItems.find((item) => {

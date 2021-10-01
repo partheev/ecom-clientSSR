@@ -2,14 +2,15 @@ import styles from './navbar.module.css'
 import SearchBar from './SearchBar'
 import SetLocation from './SetLocation'
 import Link from 'next/link'
+import { MyAccTab } from './MyAccTab'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import { styled } from '@mui/material/styles'
 import useWindowDimensions from '../../hooks/windowsSize'
 import { Badge, Button, IconButton } from '@mui/material'
-import { StateContext } from '../../pages/_app'
 import { useContext } from 'react'
+import { GlobalContext } from '../../StateManagement/GlobalState'
 export default function Header() {
-  const { state } = useContext(StateContext)
+  const { state } = useContext(GlobalContext)
   const { width } = useWindowDimensions()
   const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -50,11 +51,15 @@ export default function Header() {
         </section>
         <SearchBar />
         <section className={styles.section2}>
-          <div className={styles.item}>
-            <Link href='/signUp'>
-              <a className={styles.login}>Login/SignUp</a>
-            </Link>
-          </div>
+          {state.user ? (
+            <MyAccTab />
+          ) : (
+            <div className={styles.item}>
+              <Link href='/signUp'>
+                <a className={styles.login}>Login/SignUp</a>
+              </Link>
+            </div>
+          )}
           <div className={styles.item}>
             <Link href='/cart'>{cartButton()}</Link>
           </div>

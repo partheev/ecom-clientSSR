@@ -82,3 +82,56 @@
   max-width: 70px;
   font-size: 0.7rem;
 }
+
+.myacc {
+  position: relative;
+  bottom: -1rem;
+  padding-bottom: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myacc span {
+  margin-left: 0.5rem;
+}
+
+.accdrop {
+  display: none;
+  cursor: pointer;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  top: 2.5rem;
+  width: 10rem;
+  z-index: 20;
+}
+.accdrop:after {
+  content: ' ';
+  position: absolute;
+  right: 40%;
+  top: -0.6rem;
+  border-top: none;
+  border-right: 0.6rem solid transparent;
+  border-left: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid white;
+}
+
+.dropitem {
+  display: flex;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  /* justify-content: start; */
+}
+.dropitem:last-child {
+  border-bottom: none;
+}
+.dropitem:hover {
+  background-color: rgb(236, 234, 234);
+}
+.accdrop hr:last-child {
+  display: none;
+}
+.myacc:hover .accdrop {
+  display: block;
+}
