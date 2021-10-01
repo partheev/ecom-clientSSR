@@ -1,0 +1,33 @@
+.img {
+  /* object-fit: cover; */
+  width: 100%;
+  height: 60vh;
+}
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.carousel button:before {
+  color: gray;
+}
+
+.arrow {
+  color: black;
+  background-color: rgb(148, 148, 148);
+  padding: 10px 2px;
+  display: inline;
+  cursor: pointer;
+  top: 50%;
+  z-index: 10;
+  position: absolute;
+}
+.nextarrow {
+  right: 10px;
+}
+.prevarrow {
+  left: 10px;
+}
+/* .carousel button {
+  position: relative;
+} */

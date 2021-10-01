@@ -1,0 +1,29 @@
+.arrow {
+  color: black;
+  background-color: rgb(148, 148, 148);
+  padding: 15px 8px;
+  display: inline;
+  cursor: pointer;
+  top: 40%;
+  z-index: 10;
+  position: absolute;
+}
+.nextarrow {
+  right: -30px;
+}
+.prevarrow {
+  left: -30px;
+}
+.slider {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+}
+.slider h1 {
+  display: inline;
+}
+
+.arrow:hover {
+  background-color: rgb(180, 180, 180);
+}

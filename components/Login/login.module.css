@@ -1,0 +1,79 @@
+.bg {
+  background-color: rgb(241, 239, 239);
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+.layout {
+  display: flex;
+  border-radius: 15px;
+  width: 90%;
+  background-color: white;
+  max-width: 50rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+.showimage img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin: auto 0.5rem;
+  /* height: 50%; */
+}
+
+.showimage {
+  flex: 50%;
+}
+.login {
+  flex: 50%;
+  /* display: flex;
+  flex-direction: column; */
+  height: 80%;
+  margin: auto 0.5rem;
+  padding: 0.5rem;
+}
+.logintitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.phninput {
+  margin: 2rem 0;
+}
+.login button {
+  background-color: rgb(82, 82, 252);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+.orlogin {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 4rem 0 20px;
+}
+.orlogin span {
+  background-color: white;
+  padding: 5px;
+}
+
+.gbtn {
+  width: 80%;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px 1px rgb(167, 167, 167);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  margin: 2rem auto;
+}
+.gbtn span {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.gbtn img {
+  width: 30px;
+}

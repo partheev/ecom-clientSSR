@@ -1,0 +1,37 @@
+.card {
+  height: 45vh;
+  width: 200px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  padding-top: 0;
+  border: 1px solid rgba(185, 188, 194, 0.7);
+  border-radius: 5px;
+  /* background-color: red; */
+}
+.card img {
+  object-fit: cover;
+  height: 50%;
+  width: 100%;
+}
+.card img:hover {
+  transform: scale(1.2);
+  transition: 400ms;
+}
+.producttitle {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 15%;
+  width: 100%;
+  font-size: 1rem;
+}
+.price {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: green;
+}
+.withoutDiscountPrice {
+  text-decoration: line-through;
+  color: rgb(107, 107, 107);
+}

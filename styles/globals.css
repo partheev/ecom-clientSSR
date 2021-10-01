@@ -1,3 +1,9 @@
+/* xs, extra-small: 0px
+sm, small: 600px
+md, medium: 900px
+lg, large: 1200px
+xl, extra-large: 1536px */
+
 html,
 body {
   padding: 0;
@@ -13,4 +19,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #00b7ff;
+  --greyBg: #eeeded;
 }

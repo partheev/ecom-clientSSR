@@ -1,0 +1,32 @@
+.button {
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  border: none;
+  height: 15%;
+  width: 100%;
+}
+.buttonelements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.count {
+  background-color: rgb(38, 132, 219);
+  height: 70%;
+  width: 25%;
+  font-size: large;
+  /* text-align: center; */
+  color: white;
+  font-weight: bold;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+.buttonactions {
+  cursor: pointer;
+  padding: 5px;
+}
+.buttonactions:hover {
+  background-color: rgb(197, 243, 255);
+  border-radius: 50%;
+}
