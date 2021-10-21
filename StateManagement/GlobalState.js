@@ -9,7 +9,9 @@ const initialState = {
       cartCount: 0,
     },
   ],
-  user: null,
+  user: {
+    name: null,
+  },
 }
 
 const reducer = (state, action) => {

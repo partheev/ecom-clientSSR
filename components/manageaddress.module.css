@@ -1,0 +1,32 @@
+.layout {
+  background-color: white;
+  margin-left: 1rem;
+  padding: 2rem;
+}
+.layout h2 {
+  font-weight: 500;
+}
+.addaddress {
+  border: 1px solid rgb(231, 231, 231);
+  padding: 1rem;
+  color: #2175ff;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.addaddress span {
+  margin-left: 1rem;
+}
+.addressbox {
+  padding: 1rem;
+  border: 1px solid rgb(231, 231, 231);
+  border-bottom: none;
+}
+.addressbox button {
+  border: none;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.addressbox:last-child {
+  border-bottom: 1px solid rgb(231, 231, 231);
+}

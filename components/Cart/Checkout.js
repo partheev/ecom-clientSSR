@@ -20,7 +20,6 @@ export const Checkout = () => {
       {price('DELIVERY', '₹5.3')}
       {price('TAX', '₹10.5')}
       {CheckoutBtn()}
-      <hr />
     </div>
   )
 }

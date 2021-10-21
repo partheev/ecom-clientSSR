@@ -121,11 +121,11 @@
   flex: 70%;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .layout {
-    max-width: 540px;
+    max-width: 560px;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .layout {
